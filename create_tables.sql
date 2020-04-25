@@ -1,4 +1,4 @@
-
+drop table top20000
 
 CREATE TABLE "billboard" (
     "index" INTEGER   NOT NULL,
@@ -16,11 +16,8 @@ CREATE TABLE "top20000" (
     "id" INTEGER   NOT NULL,
     "artist_lastfm" VARCHAR   NOT NULL,
     "listeners_lastfm" INTEGER   NOT NULL,
-    "scrobbles_lastfm" INTEGER   NOT NULL
-	CONSTRAINT "pk_to20000" PRIMARY KEY (
+    "scrobbles_lastfm" INTEGER   NOT NULL,
+	CONSTRAINT "pk_top20000" PRIMARY KEY (
         "artist_lastfm"
 		)
 );
-
-ALTER TABLE "billboard" ADD CONSTRAINT "Artist" FOREIGN KEY("Artist")
-REFERENCES "top20000" ("artist_lastfm");
