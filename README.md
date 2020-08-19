@@ -67,3 +67,4 @@ Below is the resulting screenshots of the database tables
 
 top
 billboard
+![4-scatter](billboard_table_screenshot.png)
